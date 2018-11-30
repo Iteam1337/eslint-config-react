@@ -1,0 +1,17 @@
+{
+  "name": "@iteam/eslint-config-iteam-react",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "believer <rickard.laurin@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": "5.9.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "10.0.1",
+    "eslint-config-react": "1.1.7",
+    "eslint-plugin-react": "^7.11.1"
+  }
+}
