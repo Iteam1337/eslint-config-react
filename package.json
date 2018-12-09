@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "keywords": [],
-  "author": "believer <rickard.laurin@gmail.com>",
+  "author": "believer <rickard.laurin@gmail.com> (https://rlaur.in)",
+  "contributors": [
+    "Jimmy Jardland <jimmy.jardland@iteam.se>"
+  ],
   "license": "MIT",
   "publishConfig": {
     "access": "public"
