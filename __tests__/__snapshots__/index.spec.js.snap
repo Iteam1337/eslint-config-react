@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should create a config 1`] = `
+Object {
+  "env": Object {
+    "browser": true,
+    "jest": true,
+    "mocha": true,
+  },
+  "extends": Array [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "prettier",
+  ],
+  "parser": "babel-eslint",
+  "rules": Object {
+    "no-unexpected-multiline": "error",
+    "no-var": "error",
+    "prefer-const": "error",
+    "react/prefer-stateless-function": "error",
+    "semi": Array [
+      "error",
+      "never",
+    ],
+    "space-before-blocks": Array [
+      "error",
+      "always",
+    ],
+  },
+}
+`;

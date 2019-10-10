@@ -1,10 +1,13 @@
 {
-  "name": "@iteam/eslint-config-iteam-react",
+  "name": "@iteam/eslint-config-react",
   "version": "0.1.1",
   "description": "",
   "main": "index.js",
   "keywords": [],
-  "author": "believer <rickard.laurin@gmail.com> (https://rlaur.in)",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "believer <rickard.laurin@gmail.com> (https://willcodefor.beer)",
   "contributors": [
     "Jimmy Jardland <jimmy.jardland@iteam.se>"
   ],
@@ -16,8 +19,13 @@
     "eslint": "^5.9.0"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "3.0.4",
     "babel-eslint": "10.0.1",
+    "eslint-config-prettier": "6.4.0",
     "eslint-config-react": "1.1.7",
-    "eslint-plugin-react": "7.11.1"
+    "eslint-plugin-react": "7.11.1",
+    "jest": "24.9.0",
+    "jest-watch-typeahead": "0.4.0",
+    "prettier": "1.18.2"
   }
 }
