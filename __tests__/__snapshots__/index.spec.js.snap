@@ -4,6 +4,7 @@ exports[`should create a config 1`] = `
 Object {
   "env": Object {
     "browser": true,
+    "es6": true,
     "jest": true,
     "mocha": true,
   },
