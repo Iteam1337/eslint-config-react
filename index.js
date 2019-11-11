@@ -7,11 +7,23 @@ module.exports = {
     jest: true,
     mocha: true,
   },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
   rules: {
     'no-unexpected-multiline': 'error',
     'no-var': 'error',
     'prefer-const': 'error',
     'react/prefer-stateless-function': 'error',
+    'react/self-closing-comp': [
+      'error',
+      {
+        component: true,
+        html: true,
+      },
+    ],
     'space-before-blocks': ['error', 'always'],
     semi: ['error', 'never'],
   },
