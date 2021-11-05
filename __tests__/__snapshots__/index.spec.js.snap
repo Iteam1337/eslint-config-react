@@ -3,15 +3,72 @@
 exports[`should create a config 1`] = `
 Object {
   "env": Object {
+    "amd": true,
     "browser": true,
     "es6": true,
     "jest": true,
     "mocha": true,
+    "node": true,
   },
   "extends": Array [
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:jsx-a11y/recommended",
+  ],
+  "overrides": Array [
+    Object {
+      "extends": Array [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:jsx-a11y/recommended",
+      ],
+      "files": Array [
+        "**/*.{ts,tsx}",
+      ],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": Object {
+        "project": "./tsconfig.json",
+      },
+      "plugins": Array [
+        "@typescript-eslint",
+        "prettier",
+      ],
+      "rules": Object {
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-unused-vars": Array [
+          "warn",
+          Object {
+            "argsIgnorePattern": "^_",
+            "ignoreRestSiblings": true,
+            "varsIgnorePattern": "^_",
+          },
+        ],
+        "no-var": "error",
+        "prefer-const": "warn",
+        "prettier/prettier": "warn",
+        "react/jsx-uses-react": "off",
+        "react/react-in-jsx-scope": "off",
+        "space-before-blocks": Array [
+          "error",
+          "always",
+        ],
+      },
+    },
+    Object {
+      "extends": Array [
+        "plugin:testing-library/react",
+      ],
+      "files": Array [
+        "**/__tests__/**/*.[jt]s?(x)",
+        "**/?(*.)+(spec|test).[jt]s?(x)",
+      ],
+    },
   ],
   "parser": "@babel/eslint-parser",
   "parserOptions": Object {
@@ -20,13 +77,13 @@ Object {
         "@babel/preset-react",
       ],
     },
+    "ecmaVersion": 2020,
     "requireConfigFile": false,
   },
   "plugins": Array [
     "prettier",
   ],
   "rules": Object {
-    "no-unexpected-multiline": "error",
     "no-unused-vars": Array [
       "warn",
       Object {
@@ -36,19 +93,10 @@ Object {
       },
     ],
     "no-var": "error",
-    "prefer-const": "error",
-    "react/prefer-stateless-function": "error",
-    "react/self-closing-comp": Array [
-      "error",
-      Object {
-        "component": true,
-        "html": true,
-      },
-    ],
-    "semi": Array [
-      "error",
-      "never",
-    ],
+    "prefer-const": "warn",
+    "prettier/prettier": "warn",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
     "space-before-blocks": Array [
       "error",
       "always",
