@@ -19,6 +19,13 @@ Object {
     "no-var": "error",
     "prefer-const": "error",
     "react/prefer-stateless-function": "error",
+    "react/self-closing-comp": Array [
+      "error",
+      Object {
+        "component": true,
+        "html": true,
+      },
+    ],
     "semi": Array [
       "error",
       "never",
@@ -27,6 +34,11 @@ Object {
       "error",
       "always",
     ],
+  },
+  "settings": Object {
+    "react": Object {
+      "version": "detect",
+    },
   },
 }
 `;
