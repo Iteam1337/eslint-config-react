@@ -15,7 +15,7 @@ Object {
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
-    "plugin:jsx-a11y/recommended",
+    "prettier",
   ],
   "overrides": Array [
     Object {
@@ -26,6 +26,7 @@ Object {
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:jsx-a11y/recommended",
+        "prettier",
       ],
       "files": Array [
         "**/*.{ts,tsx}",
@@ -36,7 +37,6 @@ Object {
       },
       "plugins": Array [
         "@typescript-eslint",
-        "prettier",
       ],
       "rules": Object {
         "@typescript-eslint/explicit-function-return-type": "off",
@@ -51,7 +51,6 @@ Object {
         ],
         "no-var": "error",
         "prefer-const": "warn",
-        "prettier/prettier": "warn",
         "react/jsx-uses-react": "off",
         "react/react-in-jsx-scope": "off",
         "space-before-blocks": Array [
@@ -80,9 +79,6 @@ Object {
     "ecmaVersion": 2020,
     "requireConfigFile": false,
   },
-  "plugins": Array [
-    "prettier",
-  ],
   "rules": Object {
     "no-unused-vars": Array [
       "warn",
@@ -94,7 +90,6 @@ Object {
     ],
     "no-var": "error",
     "prefer-const": "warn",
-    "prettier/prettier": "warn",
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
     "space-before-blocks": Array [
