@@ -37,9 +37,18 @@ Object {
     ],
     "no-var": "error",
     "prefer-const": "error",
-    "prettier/prettier": "warn",
-    "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off",
+    "react/prefer-stateless-function": "error",
+    "react/self-closing-comp": Array [
+      "error",
+      Object {
+        "component": true,
+        "html": true,
+      },
+    ],
+    "semi": Array [
+      "error",
+      "never",
+    ],
     "space-before-blocks": Array [
       "error",
       "always",
