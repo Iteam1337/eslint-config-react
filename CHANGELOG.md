@@ -22,6 +22,18 @@
 
 * ts support ([#9](https://github.com/Iteam1337/eslint-config-react/issues/9)) ([ab8ccc1](https://github.com/Iteam1337/eslint-config-react/commit/ab8ccc17ebae35dd4a6e8a9bded75b10a008b108))
 
+# [0.3.0](https://github.com/Iteam1337/eslint-config-react/compare/v0.2.0...v0.3.0) (2021-11-05)
+
+
+### Bug Fixes
+
+* add version and self-closing ([60c12b0](https://github.com/Iteam1337/eslint-config-react/commit/60c12b0292d794ea90235d9cd0ca425935fe56e8))
+
+
+### Features
+
+* ts support ([#9](https://github.com/Iteam1337/eslint-config-react/issues/9)) ([ab8ccc1](https://github.com/Iteam1337/eslint-config-react/commit/ab8ccc17ebae35dd4a6e8a9bded75b10a008b108))
+
 # [0.2.0](https://github.com/Iteam1337/eslint-config-react/compare/v0.1.2...v0.2.0) (2019-10-10)
 
 ### Bug Fixes
