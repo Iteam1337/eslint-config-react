@@ -11,22 +11,44 @@ Object {
   "extends": Array [
     "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+  ],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": Object {
+    "babelOptions": Object {
+      "presets": Array [
+        "@babel/preset-react",
+      ],
+    },
+    "requireConfigFile": false,
+  },
+  "plugins": Array [
     "prettier",
   ],
-  "parser": "babel-eslint",
   "rules": Object {
     "no-unexpected-multiline": "error",
+    "no-unused-vars": Array [
+      "warn",
+      Object {
+        "argsIgnorePattern": "^_",
+        "ignoreRestSiblings": true,
+        "varsIgnorePattern": "^_",
+      },
+    ],
     "no-var": "error",
     "prefer-const": "error",
-    "react/prefer-stateless-function": "error",
-    "semi": Array [
-      "error",
-      "never",
-    ],
+    "prettier/prettier": "warn",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
     "space-before-blocks": Array [
       "error",
       "always",
     ],
+  },
+  "settings": Object {
+    "react": Object {
+      "version": "detect",
+    },
   },
 }
 `;

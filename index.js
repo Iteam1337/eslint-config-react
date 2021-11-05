@@ -1,6 +1,17 @@
 module.exports = {
-  parser: 'babel-eslint',
-  extends: ['eslint:recommended', 'plugin:react/recommended', 'prettier'],
+  parser: '@babel/eslint-parser',
+  parserOptions: {
+    requireConfigFile: false,
+    babelOptions: {
+      presets: ['@babel/preset-react'],
+    },
+  },
+  plugins: ['prettier'],
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+  ],
   env: {
     browser: true,
     es6: true,
@@ -13,18 +24,20 @@ module.exports = {
     },
   },
   rules: {
+    'prettier/prettier': 'warn',
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off',
     'no-unexpected-multiline': 'error',
     'no-var': 'error',
     'prefer-const': 'error',
-    'react/prefer-stateless-function': 'error',
-    'react/self-closing-comp': [
-      'error',
+    'space-before-blocks': ['error', 'always'],
+    'no-unused-vars': [
+      'warn',
       {
-        component: true,
-        html: true,
+        ignoreRestSiblings: true,
+        argsIgnorePattern: '^_',
+        varsIgnorePattern: '^_',
       },
     ],
-    'space-before-blocks': ['error', 'always'],
-    semi: ['error', 'never'],
   },
 }
