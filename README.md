@@ -4,23 +4,15 @@ Contains our preferred defaults for React development
 
 ## Installation
 
-```
+```shell
 npm install --save-dev @iteam/eslint-config-react
-```
-
-or use [`supreme`](https://github.com/Iteam1337/supreme)
-
-```
-npx @iteam/supreme add eslint --react
 ```
 
 Then add the `@iteam/eslint-config-react` in your `.eslintrc`
 
-```
+```json
 {
-  "extends": [
-    "@iteam/eslint-config-react"
-  ]
+  "extends": ["@iteam/eslint-config-react"]
 }
 ```
 
@@ -28,5 +20,5 @@ Then add the `@iteam/eslint-config-react` in your `.eslintrc`
 
 - ESLint recommended
 - React recommended
+- React Hooks recommended
 - Prettier
-
