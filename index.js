@@ -7,13 +7,12 @@ module.exports = {
       presets: ['@babel/preset-react'],
     },
   },
-  plugins: ['prettier'],
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'plugin:jsx-a11y/recommended',
-    'plugin:jsx-a11y/recommended',
+    'prettier',
   ],
   env: {
     browser: true,
@@ -29,7 +28,6 @@ module.exports = {
     },
   },
   rules: {
-    'prettier/prettier': 'warn',
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
     'no-var': 'error',
@@ -51,7 +49,7 @@ module.exports = {
       parserOptions: {
         project: './tsconfig.json',
       },
-      plugins: ['@typescript-eslint', 'prettier'],
+      plugins: ['@typescript-eslint'],
       extends: [
         'eslint:recommended',
         'plugin:react/recommended',
@@ -59,10 +57,9 @@ module.exports = {
         'plugin:@typescript-eslint/eslint-recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:jsx-a11y/recommended',
+        'prettier',
       ],
-
       rules: {
-        'prettier/prettier': 'warn',
         'react/jsx-uses-react': 'off',
         'react/react-in-jsx-scope': 'off',
         'no-var': 'error',
