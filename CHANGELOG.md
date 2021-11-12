@@ -1,3 +1,10 @@
+## [0.3.1](https://github.com/Iteam1337/eslint-config-react/compare/v0.3.0...v0.3.1) (2021-11-12)
+
+
+### Bug Fixes
+
+* peer deps ([b1fa145](https://github.com/Iteam1337/eslint-config-react/commit/b1fa14530d770acdadfa284258d6eb3a976ee9ca))
+
 # [0.3.0](https://github.com/Iteam1337/eslint-config-react/compare/v0.2.0...v0.3.0) (2021-11-08)
 
 
