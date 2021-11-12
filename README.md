@@ -8,6 +8,14 @@ Althought it shouldn't happend, this means that any prettier configs you decide 
 
 ## Installation
 
+Add the peer dependencies of `@iteam/eslint-config-react` to your dev dependencies:
+
+```shell
+npx install-peerdeps --dev @iteam/eslint-config-react
+```
+
+Then add `@iteam/eslint-config-react`
+
 ```shell
 npm install --save-dev @iteam/eslint-config-react
 ```
@@ -20,10 +28,14 @@ Then add the `@iteam/eslint-config-react` in your `.eslintrc`
 }
 ```
 
-Then add the peer dependencies of `@iteam/eslint-config-react` to your dev dependencies:
+If you bootstrapped with create-react-app, edit package.json:
 
-```shell
-npx install-peerdeps --dev @iteam/eslint-config-react
+```json
+"eslintConfig": {
+    "extends": [
+      "@iteam/eslint-config-react/typescript"
+    ]
+  },
 ```
 
 ## Plugins
@@ -31,4 +43,5 @@ npx install-peerdeps --dev @iteam/eslint-config-react
 - ESLint recommended
 - React recommended
 - React Hooks recommended
+- Imports recommended
 - JSX a11y recommended
