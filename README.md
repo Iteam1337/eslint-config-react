@@ -20,6 +20,12 @@ Then add the `@iteam/eslint-config-react` in your `.eslintrc`
 }
 ```
 
+Then add the peer dependencies of `@iteam/eslint-config-react` to your dev dependencies:
+
+```shell
+npx install-peerdeps --dev @iteam/eslint-config-react
+```
+
 ## Plugins
 
 - ESLint recommended

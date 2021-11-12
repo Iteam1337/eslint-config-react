@@ -1,20 +1,8 @@
 module.exports = {
-  parser: '@babel/eslint-parser',
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 2020,
-    requireConfigFile: false,
-    babelOptions: {
-      presets: ['@babel/preset-react'],
-    },
+    project: './tsconfig.json',
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
-    'plugin:jsx-a11y/recommended',
-    'plugin:import/recommended',
-    'prettier',
-  ],
   env: {
     browser: true,
     es6: true,
@@ -28,12 +16,24 @@ module.exports = {
       version: 'detect',
     },
   },
+  plugins: ['@typescript-eslint'],
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:jsx-a11y/recommended',
+    'plugin:import/recommended',
+    'plugin:import/typescript',
+    'prettier',
+  ],
   rules: {
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
     'no-var': 'error',
     'prefer-const': 'warn',
-    'no-unused-vars': [
+    '@typescript-eslint/no-unused-vars': [
       'warn',
       {
         ignoreRestSiblings: true,
@@ -41,6 +41,8 @@ module.exports = {
         varsIgnorePattern: '^_',
       },
     ],
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
   },
   overrides: [
     {

@@ -15,50 +15,10 @@ Object {
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
+    "plugin:import/recommended",
     "prettier",
   ],
   "overrides": Array [
-    Object {
-      "extends": Array [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "plugin:react-hooks/recommended",
-        "plugin:@typescript-eslint/eslint-recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:jsx-a11y/recommended",
-        "prettier",
-      ],
-      "files": Array [
-        "**/*.{ts,tsx}",
-      ],
-      "parser": "@typescript-eslint/parser",
-      "parserOptions": Object {
-        "project": "./tsconfig.json",
-      },
-      "plugins": Array [
-        "@typescript-eslint",
-      ],
-      "rules": Object {
-        "@typescript-eslint/explicit-function-return-type": "off",
-        "@typescript-eslint/explicit-module-boundary-types": "off",
-        "@typescript-eslint/no-unused-vars": Array [
-          "warn",
-          Object {
-            "argsIgnorePattern": "^_",
-            "ignoreRestSiblings": true,
-            "varsIgnorePattern": "^_",
-          },
-        ],
-        "no-var": "error",
-        "prefer-const": "warn",
-        "react/jsx-uses-react": "off",
-        "react/react-in-jsx-scope": "off",
-        "space-before-blocks": Array [
-          "error",
-          "always",
-        ],
-      },
-    },
     Object {
       "extends": Array [
         "plugin:testing-library/react",
@@ -92,10 +52,6 @@ Object {
     "prefer-const": "warn",
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
-    "space-before-blocks": Array [
-      "error",
-      "always",
-    ],
   },
   "settings": Object {
     "react": Object {
