@@ -1,6 +1,10 @@
 # Iteam ESLint config for React
 
-Contains our preferred defaults for React development
+Contains our preferred eslint defaults for JS and TS React development
+
+This library only contains eslint _code quality_ rules and is unopinionated regarding the consumer projects formatting preferences.
+
+Althought it shouldn't happend, this means that any prettier configs you decide to use locally will override any potential conflicts it would raise with this eslint config.
 
 ## Installation
 
@@ -21,4 +25,4 @@ Then add the `@iteam/eslint-config-react` in your `.eslintrc`
 - ESLint recommended
 - React recommended
 - React Hooks recommended
-- Prettier
+- JSX a11y recommended
