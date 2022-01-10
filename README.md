@@ -28,7 +28,25 @@ Then add the `@iteam/eslint-config-react` in your `.eslintrc`
 }
 ```
 
+or if you're using TS:
+
+```json
+{
+  "extends": ["@iteam/eslint-config-react/typescript"]
+}
+```
+
 If you bootstrapped with create-react-app, edit package.json:
+
+```json
+"eslintConfig": {
+    "extends": [
+      "@iteam/eslint-config-react"
+    ]
+  },
+```
+
+or if you're using TS:
 
 ```json
 "eslintConfig": {
