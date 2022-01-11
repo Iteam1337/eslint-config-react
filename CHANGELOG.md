@@ -1,3 +1,10 @@
+## [0.3.2](https://github.com/Iteam1337/eslint-config-react/compare/v0.3.1...v0.3.2) (2022-01-10)
+
+
+### Bug Fixes
+
+* don't use fixed deps versions ([f4fcf37](https://github.com/Iteam1337/eslint-config-react/commit/f4fcf37022f16c6c30c747e4bb5ca6f2624263cd))
+
 ## [0.3.1](https://github.com/Iteam1337/eslint-config-react/compare/v0.3.0...v0.3.1) (2021-11-12)
 
 
