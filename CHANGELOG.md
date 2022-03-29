@@ -1,3 +1,10 @@
+## [0.3.4](https://github.com/Iteam1337/eslint-config-react/compare/v0.3.3...v0.3.4) (2022-03-29)
+
+
+### Bug Fixes
+
+* **deps:** typo in package json ([5642a7a](https://github.com/Iteam1337/eslint-config-react/commit/5642a7acd9ed9156a85985198c25e956e58b3e14))
+
 ## [0.3.3](https://github.com/Iteam1337/eslint-config-react/compare/v0.3.2...v0.3.3) (2022-03-29)
 
 
