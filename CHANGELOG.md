@@ -1,3 +1,10 @@
+## [0.3.5](https://github.com/Iteam1337/eslint-config-react/compare/v0.3.4...v0.3.5) (2022-03-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies ([ec1d4eb](https://github.com/Iteam1337/eslint-config-react/commit/ec1d4ebd42986b02c54b023b1b185d5e36fb7ee0))
+
 ## [0.3.4](https://github.com/Iteam1337/eslint-config-react/compare/v0.3.3...v0.3.4) (2022-03-29)
 
 
