@@ -1,8 +1,8 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`should create a config 1`] = `
-Object {
-  "env": Object {
+{
+  "env": {
     "amd": true,
     "browser": true,
     "es6": true,
@@ -10,7 +10,7 @@ Object {
     "mocha": true,
     "node": true,
   },
-  "extends": Array [
+  "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
@@ -18,31 +18,31 @@ Object {
     "plugin:import/recommended",
     "prettier",
   ],
-  "overrides": Array [
-    Object {
-      "extends": Array [
+  "overrides": [
+    {
+      "extends": [
         "plugin:testing-library/react",
       ],
-      "files": Array [
+      "files": [
         "**/__tests__/**/*.[jt]s?(x)",
         "**/?(*.)+(spec|test).[jt]s?(x)",
       ],
     },
   ],
   "parser": "@babel/eslint-parser",
-  "parserOptions": Object {
-    "babelOptions": Object {
-      "presets": Array [
+  "parserOptions": {
+    "babelOptions": {
+      "presets": [
         "@babel/preset-react",
       ],
     },
     "ecmaVersion": 2020,
     "requireConfigFile": false,
   },
-  "rules": Object {
-    "no-unused-vars": Array [
+  "rules": {
+    "no-unused-vars": [
       "warn",
-      Object {
+      {
         "argsIgnorePattern": "^_",
         "ignoreRestSiblings": true,
         "varsIgnorePattern": "^_",
@@ -53,8 +53,8 @@ Object {
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
   },
-  "settings": Object {
-    "react": Object {
+  "settings": {
+    "react": {
       "version": "detect",
     },
   },
