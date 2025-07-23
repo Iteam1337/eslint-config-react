@@ -1,3 +1,10 @@
+# [0.4.0](https://github.com/Iteam1337/eslint-config-react/compare/v0.3.5...v0.4.0) (2025-07-23)
+
+
+### Features
+
+* modernize package ([346d9b2](https://github.com/Iteam1337/eslint-config-react/commit/346d9b2a2b71ec7a85163516760d344ff933d8a4))
+
 ## [0.3.5](https://github.com/Iteam1337/eslint-config-react/compare/v0.3.4...v0.3.5) (2022-03-29)
 
 
