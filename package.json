@@ -10,7 +10,8 @@
   "author": "believer <rickard.laurin@gmail.com> (https://willcodefor.beer)",
   "contributors": [
     "Jimmy Jardland <jimmy.jardland@iteam.se>",
-    "momentiris <momentiris@gmail.com> (https://github.com/momentiris)"
+    "momentiris <momentiris@gmail.com> (https://github.com/momentiris)",
+    "Sven Johansson <sven.johansson@iteam.se> (https://github.com/svjson)"
   ],
   "license": "MIT",
   "publishConfig": {
@@ -28,7 +29,7 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jsx-a11y": "^6.10.0",
-    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-testing-library": "^7.6.0",
     "jest": "^30.0.5",
@@ -46,7 +47,7 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jsx-a11y": "^6.10.0",
-    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-testing-library": "^7.6.0",
     "prettier": "^3.6.2",
