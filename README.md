@@ -1,65 +1,66 @@
 # Iteam ESLint config for React
 
-Contains our preferred eslint defaults for JS and TS React development
+Native ESLint 9 flat configs with Iteam's preferred code-quality rules for JavaScript and TypeScript React projects. Formatting remains the consumer's choice; Prettier compatibility is included last so formatting rules do not conflict.
 
-This library only contains eslint _code quality_ rules and is unopinionated regarding the consumer projects formatting preferences.
-
-Althought it shouldn't happend, this means that any prettier configs you decide to use locally will override any potential conflicts it would raise with this eslint config.
-
-## Installation
-
-Add the peer dependencies of `@iteam/eslint-config-react` to your dev dependencies:
+## Install
 
 ```shell
-npx install-peerdeps --dev @iteam/eslint-config-react
+pnpm add --save-dev @iteam/eslint-config-react eslint
 ```
 
-Then add `@iteam/eslint-config-react`
+pnpm installs the package's declared peer dependencies automatically.
 
-```shell
-npm install --save-dev @iteam/eslint-config-react
+## JavaScript and JSX
+
+Create `eslint.config.mjs`:
+
+```js
+import iteamReact from '@iteam/eslint-config-react'
+
+export default [...iteamReact]
 ```
 
-Then add the `@iteam/eslint-config-react` in your `.eslintrc`
+## TypeScript and TSX
 
-```json
-{
-  "extends": ["@iteam/eslint-config-react"]
-}
+Create `eslint.config.mjs`:
+
+```js
+import iteamReactTypescript from '@iteam/eslint-config-react/typescript'
+
+export default [...iteamReactTypescript]
 ```
 
-or if you're using TS:
+The TypeScript config expects a `tsconfig.json` in the project working directory.
 
-```json
-{
-  "extends": ["@iteam/eslint-config-react/typescript"]
-}
-```
+## Customize
 
-If you bootstrapped with create-react-app, edit package.json:
+Append flat-config objects to override rules for selected files:
 
-```json
-"eslintConfig": {
-    "extends": [
-      "@iteam/eslint-config-react"
-    ]
+```js
+import iteamReact from '@iteam/eslint-config-react'
+
+export default [
+  ...iteamReact,
+  {
+    files: ['src/**/*.{js,jsx}'],
+    rules: {
+      'no-console': 'warn',
+    },
   },
+]
 ```
 
-or if you're using TS:
-
-```json
-"eslintConfig": {
-    "extends": [
-      "@iteam/eslint-config-react/typescript"
-    ]
-  },
-```
-
-## Plugins
+## Included plugins
 
 - ESLint recommended
 - React recommended
 - React Hooks recommended
 - Imports recommended
-- JSX a11y recommended
+- JSX accessibility recommended
+- Testing Library React rules for test files
+
+## Test
+
+```shell
+pnpm test
+```

@@ -1,8 +1,13 @@
 {
   "name": "@iteam/eslint-config-react",
   "version": "0.4.0",
+  "packageManager": "pnpm@12.6.0",
   "description": "",
   "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./typescript": "./typescript.js"
+  },
   "keywords": [],
   "scripts": {
     "test": "jest"
@@ -21,6 +26,7 @@
     "@babel/eslint-parser": "^7.28.0",
     "@babel/plugin-syntax-jsx": "^7.27.1",
     "@babel/preset-react": "^7.27.1",
+    "@eslint/js": "^9.39.5",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@typescript-eslint/eslint-plugin": "^8.38.0",
@@ -32,6 +38,7 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-testing-library": "^7.6.0",
+    "globals": "^16.5.0",
     "jest": "^30.0.5",
     "jest-watch-typeahead": "^3.0.1",
     "prettier": "^2.6.1",
@@ -41,6 +48,7 @@
     "@babel/eslint-parser": "^7.28.0",
     "@babel/plugin-syntax-jsx": "^7.27.1",
     "@babel/preset-react": "^7.27.1",
+    "@eslint/js": "^9.39.5",
     "@typescript-eslint/eslint-plugin": "^8.38.0",
     "@typescript-eslint/parser": "^8.38.0",
     "eslint": "^9.31.0",
@@ -50,6 +58,7 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-testing-library": "^7.6.0",
+    "globals": "^16.5.0",
     "prettier": "^3.6.2",
     "typescript": "^5.6.2"
   }
