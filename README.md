@@ -10,15 +10,22 @@ pnpm add --save-dev @iteam/eslint-config-react eslint
 
 pnpm installs the package's declared peer dependencies automatically.
 
-## JavaScript and JSX
+## Starter config for JavaScript and JSX
 
 Create `eslint.config.mjs`:
 
 ```js
 import iteamReact from '@iteam/eslint-config-react'
 
-export default [...iteamReact]
+export default [
+  {
+    ignores: ['node_modules/**', 'dist/**', 'coverage/**'],
+  },
+  ...iteamReact,
+]
 ```
+
+Run ESLint with `pnpm exec eslint src`.
 
 ## TypeScript and TSX
 
@@ -27,7 +34,12 @@ Create `eslint.config.mjs`:
 ```js
 import iteamReactTypescript from '@iteam/eslint-config-react/typescript'
 
-export default [...iteamReactTypescript]
+export default [
+  {
+    ignores: ['node_modules/**', 'dist/**', 'coverage/**'],
+  },
+  ...iteamReactTypescript,
+]
 ```
 
 The TypeScript config expects a `tsconfig.json` in the project working directory.
